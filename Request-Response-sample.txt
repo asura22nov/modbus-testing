@@ -1,0 +1,39 @@
+Opening /dev/ttyUSB0 at 9600 bauds (E, 8, 1)
+[02][03][00][8C][00][0A][04][15]
+Waiting for a confirmation...
+<02><03><14><24><9E><42><A6><00><00><00><00><00><00><00><00><36><ED><43><79><00><00><00><00><04><73>
+
+[02] - The Slave Address (02 hex = address 2 )
+[03] - The Function Code 3 (read Analog Output Holding Registers)
+[00][8C] - The Data Address of the first register requested.
+             ( 008C hex = 140 , + 40001 offset = input #40141 )
+[00][0A] - The total number of registers requested. (read 10 registers 40141 to 40151) 
+[04][15] - CRC
+
+
+
+<02>	- The Slave Address (02 hex = address 2 )
+<03>    - The Function Code 3 (read Analog Output Holding Registers)
+<14>    - The number of data bytes to follow (10 registers x 2 bytes each = 20 bytes)~14HEX
+<24><9E>- The contents of register 40141 - 36 158
+<42><A6>- The contents of register 40142 - 66 166
+<00><00>- The contents of register 40143 -
+<00><00>- The contents of register 40144 -
+<00><00>- The contents of register 40145 - 
+<00><00>- The contents of register 40146 - 
+<36><ED>- The contents of register 40147 - 54 237
+<43><79>- The contents of register 40148 - 67 121
+<00><00>- The contents of register 40149 - 
+<00><00>- The contents of register 40150 - 
+<04><73>- CRC
+
+Voltage 					140
+Voltage - Phase 1 				142
+Voltage - Phase 2 				144
+Voltage - Phase 3 				146
+Current 					148
+Current - Phase 1 				150
+Current - Phase 2 				152
+Current - Phase 3 				154
+				
+Active Energy 					158

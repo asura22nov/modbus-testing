@@ -1,0 +1,49 @@
+R Phase to Neutral Voltage                ,99
+Y Phase to Neutral Voltage                ,101
+B Phase to Neutral Voltage                ,103
+Average Voltage                           ,105
+RY Voltage                                ,107
+YB Voltage                                ,109
+BR Voltage                                ,111
+R Phase Line current                      ,113
+Y Phase Line current                      ,115
+B Phase Line current                      ,117
+Neutral Line current                      ,119
+R Phase Active Current                    ,121
+Y Phase Active Current                    ,123
+B Phase Active Current                    ,125
+R Phase Reactive Current                  ,127
+Y Phase Reactive Current                  ,129
+B Phase Reactive Current                  ,131
+Power factor                              ,133
+Power factor                              ,135
+Power factor                              ,137
+Avg power factor                          ,139
+R- Phase Active Power                     ,141
+Y- Phase Active Power                     ,143
+B- Phase Active Power                     ,145
+3 Phase Active Power                      ,147
+R- Phase Reactive Power                   ,149
+Y- Phase Reactive Power                   ,151
+B- Phase Reactive Power                   ,153
+3 Phase Reactive Power                    ,155
+R- Phase Apparent Power                   ,157
+Y- Phase Apparent Power                   ,159
+B- Phase Apparent Power                   ,161
+3 Phase Apparent Power                    ,163
+RY ph ang                                 ,165
+YB ph ang                                 ,167
+BR ph ang                                 ,169
+Frequency Hz                              ,171
+Meter real Time                           ,173
+Meter Temperature                         ,175
+R-Phase Voltage Total Harmonic Distortion ,177
+Y-Phase Voltage Total Harmonic Distortion ,179
+B-Phase Voltage Total Harmonic Distortion ,181
+R-Phase Current Total Harmonic Distortion ,183
+Y-Phase Current Total Harmonic Distortion ,185
+B-Phase Current Total Harmonic Distortion ,187
+R-Phase Power Total Harmonic Distortion   ,189
+Y-Phase Power Total Harmonic Distortion   ,191
+B-Phase Power Total Harmonic Distortion   ,193
+Unused- Reserved                          ,195

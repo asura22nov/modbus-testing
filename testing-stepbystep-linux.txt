@@ -1,0 +1,56 @@
+##################################################
+Linux General Installation & Hardware Requirements
+##################################################
+
+1)Raspbian or Ubuntu
+
+- sudo apt-get update -y && sudo apt-get upgrade -y
+- modprobe usbserial (load linux kernel modules - FTDI, CP210X, PL2303 or CH340G USB chipset)
+
+2)Hardware
+
+- RS485 Cable ( shielded twisted pair - 2 wire)
+- RS485 to USB Convertor
+- Modbus Enabled Energy Meter(Modbus - RTU with Registry Mappings)
+
+
+######################
+libmodbus Installation
+######################
+
+1) Installing dependancies.
+
+sudo apt-get install -y autoconf libtool
+
+2) Clone libmodbus master branch by,
+
+git clone https://github.com/stephane/libmodbus/
+
+3) Enter the directory.
+
+cd libmodbus
+
+4) ./autogen.sh && ./configure –prefix=/usr && make && sudo make install
+
+./autogen.sh && ./configure prefix=/usr && make && sudo make install
+
+sudo ldconfig
+
+5) To test the libmodbus, try examples under tests folder.
+
+To compile code, use, gcc -o filename filename.c pkg-config –libs –cflags lidmodbus
+
+pkg-config --libs --cflags libmodbus
+
+######################
+C Program Compile
+######################
+
+1) Compile code
+
+gcc -o modbus-loop-working -I/usr/local/include/modbus/ modbus-loop-working.c -lmodbus
+
+2)Execute the code
+
+./modbus-loop-working
+
